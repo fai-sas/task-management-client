@@ -10,6 +10,8 @@ import DashboardLayout from '../layout/DashboardLayout'
 import AddTask from '../pages/Dashboard/AddTask'
 import AllTasks from '../pages/Dashboard/AllTasks'
 import UpdateTask from '../pages/Dashboard/UpdateTask'
+import Contact from '../pages/Contact'
+import Teams from '../pages/Teams'
 
 const Route = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const Route = createBrowserRouter([
       {
         path: '/',
         element: <HomePage />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+      {
+        path: '/teams',
+        element: <Teams />,
       },
     ],
   },

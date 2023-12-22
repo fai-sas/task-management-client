@@ -14,7 +14,7 @@ const Dashboard = () => {
   }
 
   return (
-    <section className='max-w-3xl mx-auto '>
+    <section className='max-w-3xl p-8 mx-auto '>
       <h1 className='text-4xl font-bold'>
         You have total {tasks.length} number of tasks available
       </h1>

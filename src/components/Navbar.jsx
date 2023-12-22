@@ -13,6 +13,7 @@ const Navbar = () => {
   const navigation = [
     { title: 'Dashboard', path: '/dashboard' },
     { title: 'Contact Us', path: '/contact' },
+    { title: 'Our Team', path: '/teams' },
     !user && { title: 'Login', path: '/login' },
   ].filter(Boolean)
 

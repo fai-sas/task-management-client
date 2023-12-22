@@ -171,7 +171,7 @@ export default function PersistentDrawerLeft() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Toolbar>
+        {/* <Toolbar>
           <IconButton
             color='inherit'
             aria-label='open drawer'
@@ -180,7 +180,7 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-        </Toolbar>
+        </Toolbar> */}
       </Main>
     </Box>
   )
