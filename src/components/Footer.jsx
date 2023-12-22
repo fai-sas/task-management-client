@@ -53,7 +53,7 @@ const Footer = () => {
         </Link>
       </div>
       <p className='font-medium text-center text-gray-700'>
-        &copy; {currentYear} Company Ltd. All rights reservered
+        &copy; {currentYear} All rights reserved
       </p>
     </footer>
   )

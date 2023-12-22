@@ -4,11 +4,13 @@
 
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../components/Sidebar'
+import PersistentDrawerLeft from '../components/Drawer'
 
 const Dashboard = () => {
   return (
     <>
-      <Sidebar />
+      <PersistentDrawerLeft />
+      {/* <Sidebar /> */}
       <Outlet />
     </>
   )

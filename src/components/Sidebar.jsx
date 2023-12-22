@@ -80,6 +80,7 @@ function Sidebar(props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
+        className='bg-blue-200 '
         position='fixed'
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
