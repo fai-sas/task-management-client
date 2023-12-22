@@ -12,6 +12,7 @@ import AllTasks from '../pages/Dashboard/AllTasks'
 import UpdateTask from '../pages/Dashboard/UpdateTask'
 import Contact from '../pages/Contact'
 import Teams from '../pages/Teams'
+import DashboardTest from '../pages/Dashboard/DashboardTest'
 
 const Route = createBrowserRouter([
   {
@@ -45,7 +46,8 @@ const Route = createBrowserRouter([
         path: '/dashboard',
         element: (
           <PrivateRoute>
-            <Dashboard />
+            {/* <Dashboard /> */}
+            <DashboardTest />
           </PrivateRoute>
         ),
       },

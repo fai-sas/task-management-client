@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
 
+import DragDrop from '../components/DragDrop'
 import useAuth from '../hooks/useAuth'
 import useGetTasks from '../hooks/useGetTasks'
 
@@ -112,6 +113,7 @@ const Dashboard = () => {
         </div>
         {/*  */}
       </article>
+      <DragDrop />
     </section>
   )
 }

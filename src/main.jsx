@@ -9,6 +9,7 @@ import Route from './router/Route'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { DndProvider } from 'react-dnd'
+import { ToastContainer } from 'react-toastify'
 
 const client = new QueryClient()
 
@@ -21,5 +22,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </AuthProvider>
       </QueryClientProvider>
     </DndProvider>
+    <ToastContainer
+      position='top-center'
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme='light'
+    />
   </React.StrictMode>
 )

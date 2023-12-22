@@ -5,16 +5,25 @@
 import React from 'react'
 import { useDrag } from 'react-dnd'
 
-const Task = ({ task, index, onDragEnd }) => {
-  const [{ isDragging }, drag] = useDrag({
+const Task = ({ task }) => {
+  const [{ isDragging }, drag] = useDrag(() => ({
     type: 'TASK',
-    item: { index, status: task.status },
-  })
-
-  const opacity = isDragging ? 0.5 : 1
+    item: { id: task.id },
+    collect: (monitor) => ({
+      isDragging: !!monitor.isDragging(),
+    }),
+  }))
 
   return (
-    <div ref={drag} style={{ opacity }}>
+    <div
+      ref={drag}
+      style={{
+        border: '1px solid',
+        padding: '1rem',
+        margin: '0.5rem',
+        opacity: isDragging ? 0.5 : 1,
+      }}
+    >
       {task.title}
     </div>
   )
